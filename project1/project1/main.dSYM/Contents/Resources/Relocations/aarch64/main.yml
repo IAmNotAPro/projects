@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/gcarmichael/University of Arkansas/Programming Foundations I/projects/project1/project1/main'
+relocations:     []
+...
