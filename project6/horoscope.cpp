@@ -65,7 +65,9 @@ Horoscope::Horoscope(const Horoscope &other)
 // Returns: none
 // Purpose: Destructor. Deallocates memory.
 // -------------------------------------------------
-Horoscope::~Horoscope() = default;
+Horoscope::~Horoscope(){
+    cout << "Horoscope for " << getName() << " destroyed." << endl;
+}
 
 
 // -------------------------------------------------
@@ -137,7 +139,7 @@ void Horoscope::loadMessages()
     string line;
     int count = 0;
 
-    // Unsure on how to do this -- figure out later
+    // Finished
     if (month > 9){
         month -= 4;
         index = month;
@@ -160,8 +162,6 @@ void Horoscope::loadMessages()
         } else {
         }
     }
-
-    cout << index;
 
 
    // TODO: Create an ifstream object and open the "love.txt" file for reading.`
@@ -196,7 +196,7 @@ void Horoscope::loadMessages()
     // TODO: Open and Read message from health.txt
     ifstream healthTxt("health.txt");
     count = 0;
-    
+
     while (getline(healthTxt, line))
     {
         if (count == index)
@@ -218,6 +218,8 @@ void Horoscope::loadMessages()
 void Horoscope::displayHoroscope() const
 {
     //TODO: Display the Horoscope messages
+    cout << "\nHoroscope for " << getName() << "!" << endl;
+    cout << "Your sign is: " << sign << endl;
     cout << love << endl;
     cout << career << endl;
     cout << health << endl;

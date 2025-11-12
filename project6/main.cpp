@@ -39,7 +39,7 @@ int main()
         cout << "Invalid input, please enter your birth day (1-31): ";
         cin >> day;
     }
-    cout << "Hello " << name << " let's check your horoscope!";
+    cout << "Hello " << name << " let's check your horoscope!" << endl;
 
 
     // -------------------------------------------------
@@ -54,7 +54,7 @@ int main()
     h1.setName(name);
     h1.getName();
 
-    cout << "Horoscope for " << h1.getName() << "!";
+    
 
     // -------------------------------------------------
     // TODO #3: Call the member functions to
@@ -71,8 +71,11 @@ int main()
     // (a)  Create a new object (h2) as a copy of h1
     // (b)  Call the displayHoroscope() function using that 
     // -------------------------------------------------
+    cout << "\nCreating a copy to display copy constructor..." << endl;
+    
     Horoscope h2(h1);
     h2.displayHoroscope();
+
 
     return 0;
 }
