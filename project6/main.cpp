@@ -1,6 +1,6 @@
 /******************************************************************************
 Fall 2024 Programming Foundations I
-Author: Grant Carmichael
+Author: Grant Carmichael, ID: 100480831
 Date: November 10 2024
 Purpose: Starter main program for the Horoscope Project
 *******************************************************************************/
